@@ -73,7 +73,7 @@ function deleteTaskLS(task) {
 
 function getTasks(){
     const ul = document.querySelector('ul')
-    while(ul.firstChild)
+    while(ul.firstChild) // might wanna add a check to see if it is a li element that were removing
     {
         ul.removeChild(ul.firstChild)
     }
